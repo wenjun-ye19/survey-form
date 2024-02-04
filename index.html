@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    
+    <header class="header">
+      <h1 id="title">Survey Form</h1>
+    </header>
+
+    <div class="sub-title">
+      <p id="description">Thanks for your feedback!</p>
+    </div>
+
+    <main>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label">Enter your name: <input id="name" type="text" placeholder="Your Full Name" required /></label>
+        </div>
+
+        <div class="form-group">
+          <label id="email-label">Enter your email: <input id="email" type="email" pattern="email" placeholder="Your Email" required /></label>
+        </div>
+
+        <div class="form-group">
+          <label id="number-label">Enter your Age: <input id="number" type="number" min="18" max="100" placeholder="Your age" /></label>
+        </div>
+        
+        <div class="form-group">
+          <p>How do you find the product?</p>
+        <select id="dropdown">
+          <option disabled selected value>Rate the product</option>
+          <option>Excellent</option>
+          <option>Good</option>
+          <option>Fair</option>
+          <option>Poor</option>
+          <option>Very Poor</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend our product to your family and friends?</p>
+          <label><input name="recommend" type="radio" value="yes" checked />YES</label>
+          <label><input name="recommend" type="radio" value="maybe" />Maybe</label>
+          <label><input name="recommend" type="radio" value="nope" />Nope</label>
+        </div>
+
+        <div class="form-group">
+          <p>Any suggestions for improvement so that our products can serve you better?</p>
+          <label><input type="checkbox" value="UX" />User Experience</label>
+          <label><input type="checkbox" value="more" />More functionality</label>
+          <label><input type="checkbox" value="cheaper" />Cheaper</label>
+        </div>
+        <div class="form-group">
+          <p>Any other comments?</p>
+          <textarea id="comments" placeholder="Feel free to enter any comments"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Submit</submit>
+        </div>
+        
+      </form>
+      
+    </main>
+    
+
+  </body>
+</html>
